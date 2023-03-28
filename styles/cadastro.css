@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "lemon milk";
+    src: url(../fonts/LEMONMILK-Bold.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+    --cor0: #CC0000; 
+    --cor1: #952D2D;
+    --cor2: #800000;
+    --cor3: #CC3D3D;
+    --cor4: #4D0000;
+    --font-padrao: Helvetica, sans-serif;
+    --font-titulo: 'Bebas Neue', cursive;
+    --font2: 'lemon milk', sans-serif;
+    --font3: 'Noto Sans', sans-serif;
+}
+
+body {
+    background: black url(../images/burguer-cadastro.png) no-repeat right center fixed;
+    background-size: contain;
+}
+
+img {
+    height: 80px;
+    margin-left: 35px;  
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 50px;
+    margin-left: 45px;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #933716;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    font-family: 'lemon milk', sans-serif;
+}
+
+input {
+    border: 1px solid;
+    font-weight: bold;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    background-color: #EEE2DF;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    font-weight: 900;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+button:hover{ 
+    transform: scale(1.1);
+    background-color: #EE8434;
+    transition: .5s;
+    color: black;
+}
+
+form p {
+    margin-top: 20px;
+    color: white;
+}
+
+form p a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+
+#msg-es{ /*A mensagem vai começar com o padrão amarelo (erro). Vai ser trocado no JS*/
+    text-align: center; 
+    color: rgb(255, 255, 255);
+    background-color: #ffc400;
+    padding: 4px;
+    border-radius: 4px;
+    display: none;
+}

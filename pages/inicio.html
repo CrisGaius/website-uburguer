@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--http://localhost:5500/pages/inicio.html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="shortcut icon" href="../favicon/burguer.ico" type="image/x-icon">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <abbr title="Logo"><a href="../index.html"><img src="../images/uburguer-logo.png" alt="Logo do UBurguer" id="logo-uburguer"></a></abbr>
+        <p>Olá, Pixo!</p>
+    </header>
+    <menu id="menu">
+        <ul>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#combos">Combos</a></li>
+            <li><a href="#hamburgueres">Hambúrgueres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#sobremesas">Sobremesas</a></li>
+            <li><a href="#acompanhamentos">Acompanhamentos</a></li>
+        </ul>
+    </menu>
+    <main>
+        <h1 id="promocoes">Promoções</h1>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 1 da UBurguer">
+                <p>Promoção 1</p>
+                <p id="precos">R$35,99</p>
+                <button class="botao" onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 2 da UBurguer">
+                <p>Promoção 2</p>
+                <p id="precos">R$33,99</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 3 da UBurguer">
+                <p>Promoção 3</p>
+                <p id="precos">R$31,99</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 4 da UBurguer">
+                <p>Promoção 4</p>
+                <p id="precos">R$28,99</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 5 da UBurguer">
+                <p>Promoção 5</p>
+                <p id="precos">R$27,99</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/promocao-burguer.png" alt="Promoção 6 da UBurguer">
+                <p>Promoção 6</p>
+                <p id="precos">R$25,99</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <h1 id="combos">Combos</h1>
+    <div class="container">
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 1 da UBurguer">
+            <p>Combo 1</p>
+            <p id="precos">R$45,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 2 da UBurguer">
+            <p>Combo 2</p>
+            <p id="precos">R$43,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 3 da UBurguer">
+            <p>Combo 3</p>
+            <p id="precos">R$41,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 4 da UBurguer">
+            <p>Combo 4</p>
+            <p id="precos">R$40,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 5 da UBurguer">
+            <p>Combo 5</p>
+            <p id="precos">R$39,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+        <div class="ofertas">
+            <img src="../images/combo-hamburguer.png" alt="Combo 6 da UBurguer">
+            <p>Combo 6</p>
+            <p id="precos">R$37,99</p>
+            <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+        </div>
+    </div>
+    <a href="#logo-uburguer" id="voltar-topo">
+    <div id="div-seta">
+        <img src="../images/seta.png" alt="seta">
+    </div></a>
+    <h1 id="hamburgueres">Hambúrgueres</h1>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 1</p>
+                <p id="precos">R$20,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 2</p>
+                <p id="precos">R$19,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 3</p>
+                <p id="precos">R$18,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 4</p>
+                <p id="precos">R$16,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 5</p>
+                <p id="precos">R$15,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/hamburguer.png" alt="hamburguer">
+                <p>Hambúrguer 6</p>
+                <p id="precos">R$13,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <h1 id="bebidas">Bebidas</h1>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 1</p>
+                <p id="precos">R$15,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+                
+            </div>
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 2</p>
+                <p id="precos">R$14,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+                
+            </div>
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 3</p>
+                <p id="precos">R$13,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 4</p>
+                <p id="precos">R$10,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 5</p>
+                <p id="precos">R$8,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/bebida.png" alt="bebida UBuuguer">
+                <p>Bebida 6</p>
+                <p id="precos">R$6,00</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        </div>
+        <h1 id="sobremesas">Sobremesas</h1>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 1</p>
+                <p id="precos">R$27,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 2</p>
+                <p id="precos">R$23,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 3</p>
+                <p id="precos">R$22,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 4</p>
+                <p id="precos">R$20,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 5</p>
+                <p id="precos">R$17,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 6</p>
+                <p id="precos">R$15,90</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        </div>
+        <h1 id="acompanhamentos">Acompanhamentos</h1>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 1</p>
+                <p id="precos">R$18,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 2</p>
+                <p id="precos">R$15,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 3</p>
+                <p id="precos">R$13,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 4</p>
+                <p id="precos">R$11,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 5</p>
+                <p id="precos">R$10,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+            <div class="ofertas">
+                <img src="../images/batata-frita-cheddar.png" alt="Acompanhamentos">
+                <p>Acompanhamento 6</p>
+                <p id="precos">R$7,50</p>
+                <button onclick="iniciaModal('modal-promocao')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <p id="pedido">Seu pedido:</p>
+            <div class="conteudo-modal">
+                <img class="img-torta" src="../images/sobremesa.png" alt="sobremesa">
+                <p>Sobremesa 1</p>
+                <p id="precos">R$27,90</p>
+                <button id="subtrair" name="subtrair" onclick="subtrair()">-</button>
+                <span id="num-atual"> 1 </span>
+                <button id="adicionar" name="adicionar" onclick="somar()">+</button>
+            </div>
+            <hr>
+            <div id="container-sugestoes">
+                <h4 id="sugestoes">Sugestões do chef:</h4>
+                <div class="conteudo-sugestoes">
+                    <img class="img-torta" src="../images/batata-frita-cheddar.png" alt="promoçao">
+                    <p>Acompanhamento 2</p>
+                    <p id="precos">R$15,50</p>
+                    <div>
+                        <button id="subtrair" name="subtrair" onclick="subtrair2()">-</button>
+                        <span id="num-atual2">0</span>
+                        <button id="adicionar" name="adicionar" onclick="somar2()">+</button>
+                    </div>
+                </div>
+                <div class="conteudo-sugestoes">
+                    <img class="img-torta" src="../images/combo-hamburguer.png" alt="combo">
+                    <p>Combo 3</p>
+                    <p id="precos">R$41,99</p>
+                    <div>
+                        <button id="subtrair" name="subtrair" onclick="subtrair3()">-</button>
+                        <span id="num-atual3">0</span>
+                        <button id="adicionar" name="adicionar" onclick="somar3()">+</button>
+                    </div>
+                </div>
+                <div class="conteudo-sugestoes">
+                    <img class="img-torta" src="../images/hamburguer.png" alt="sobremesa">
+                    <p>Hambúrguer 6</p>
+                    <p id="precos">R$13,90</p>
+                    <div>
+                        <button id="subtrair" name="subtrair" onclick="subtrair4()">-</button>
+                        <span id="num-atual4">0</span>
+                        <button id="adicionar" name="adicionar" onclick="somar4()">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="finalizar-pedido">Finalizar Pedido</button>
+        </div>
+    </div>
+ 
+    <script src="../scripts/inicio.js"></script>
+</body>
+</html>

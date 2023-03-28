@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--http://localhost:5500/pages/inicio.html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Faça Login</title>
+    <link rel="shortcut icon" href="favicon/burguer.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="info">
+                <h1>Faça login</h1>
+                <p>Preencha os campos com seus dados.</p>
+                <p>E aproveite nossas delícias.</p>
+            </div> 
+            <button id="botao-cardapio" onclick="iniciaModal('modal-promocao')">Veja nosso <br> cardápio</button>
+        </header>
+        <section>
+           
+            <div class="principal">
+                
+                <form action="pages/inicio.html" method="get">
+                    
+                    <div class="inputbox">
+                        <label for="email">Email <img class ="img" src="icons/email2.png" alt="icone do email"></label>
+                        <input type="email" name="email" id="email" required>
+                    </div> 
+                   
+                    <div class="inputbox">
+                        <label for="senha">Senha <img class="img" src="icons/cadeado2.png" alt="icone do da senha"></label>
+                        <input type="password" name="senha" id="senha" required minlength="5" maxlength="10">
+                    </div>
+
+                    <button type="submit" id="botao" class="semdecoracao">Entrar</button>
+                   
+                    <div class="adicionais">
+                        <a href="pages/cadastro.html" rel="next">Crie sua conta!</a>
+                        <a href="pages/esqueciasenha.html" rel="next"> Esqueceu a senha?</a>
+                    </div>
+               
+                </form>
+           
+            </div>
+       
+        </section>
+    
+    </main>
+
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <img src="images/cardapio.png" alt="Cardapio">
+
+        </div>
+    </div>
+    
+    <script src="scripts/inicio.js"></script>
+</body>
+</html>
