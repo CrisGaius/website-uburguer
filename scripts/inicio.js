@@ -77,3 +77,18 @@ function subtrair4() {
         numAtualWrappper4.innerHTML = numAtual4;
     }
 }
+
+var botaoFinalizar = document.querySelector('button#finalizar-pedido')
+
+botaoFinalizar.addEventListener('click', function enviarProZap () {
+    var div = document.querySelector('div.conteudo-modal')
+
+    var nomeDoProduto = div.children[1].textContent
+    var quantidadeDoProduto = div.children[4].textContent
+
+    var loader = document.querySelector('div#container-loader')
+    loader.style.display = 'inline-block'
+    
+
+    window.location.href = `https://wa.me//5581983249323?text=Ol%c3%a1%2c+gostaria+de+${quantidadeDoProduto}+${nomeDoProduto}+que+vi+no+site+de+voc%c3%aas.`
+})

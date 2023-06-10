@@ -10,7 +10,7 @@
 }
 
 :root {
-    --cor0: #CC0000; 
+    --cor0: #CC0000;
     --cor1: #952D2D;
     --cor2: #800000;
     --cor3: #CC3D3D;
@@ -87,10 +87,10 @@ menu ul li a {
     color: white;
     transition: 0.3s ease-in-out;
     font-size: 1.1em;
-    
+
 }
 
-menu li a:hover{
+menu li a:hover {
     transform: scale(1.1);
     color: #FF881C;
     text-decoration: underline;
@@ -133,7 +133,7 @@ div.ofertas p#precos {
     justify-content: right;
 }
 
-#voltar-topo img{
+#voltar-topo img {
     width: 50px;
     background-color: var(--cor2);
     position: fixed;
@@ -251,7 +251,7 @@ div.conteudo-modal p {
 }
 
 button#subtrair {
-    cursor:pointer;
+    cursor: pointer;
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -261,7 +261,7 @@ button#subtrair {
 }
 
 button#adicionar {
-    cursor:pointer;
+    cursor: pointer;
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -273,14 +273,14 @@ button#subtrair:hover {
     background-color: #c0c0c0;
 }
 
-button#adicionar:hover { 
+button#adicionar:hover {
     background-color: #c0c0c0;
 }
 
 div#container-sugestoes {
     position: absolute;
     display: inline-block;
-    
+
     margin-top: 20px;
 }
 
@@ -320,8 +320,39 @@ button#finalizar-pedido {
     color: white;
     cursor: pointer;
     border: none;
+    text-decoration: none;
 }
 
-button#finalizar-pedido:hover { 
+button#finalizar-pedido:hover {
     opacity: 0.8;
+}
+
+div#container-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 3000;
+}
+
+#loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
